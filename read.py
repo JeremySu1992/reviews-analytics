@@ -27,3 +27,6 @@ for d in data:
 	if 'good' in d:
 		good.append(d)
 print('一共有', len(good), '筆留言提到good')
+
+bad = [d for d in data if 'bad' in d] #list comprehension
+print('一共有', len(bad), '筆留言提到bad')
